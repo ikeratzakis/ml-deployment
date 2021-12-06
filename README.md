@@ -3,6 +3,6 @@ Demonstration of a deployed machine learning model using Flask. The task is to a
 # How to use
 If you want to see the project in action, visit https://ikera.pythonanywhere.com/. I'm not sure if I can distribute the dataset yet, since it was obtained from a university course page. 
 # Classifier info (vacc_deployment.py)
-The prototype classifier uses a Logistic Regression model, applied on a tf-idf vectorized twitter corpus. There are 3 possible classes: neutral, provax, anti-vax.
+The prototype classifier uses a Logistic Regression model, applied on a tf-idf vectorized twitter corpus. Libraries used include scikit-learn, pandas, nltk, wordcloud, Flask. There are 3 possible classes: neutral, provax, anti-vax.
 # Deployment info
 The file templates/index.html contains the website's layout, styled with some CSS in the static/css folder. In vacc_deployment.py a simple flask.render_template method is called inside predict() to route the results of the prediction to the website.
